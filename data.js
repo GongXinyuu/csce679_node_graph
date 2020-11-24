@@ -55,6 +55,12 @@ function linkWidth(link){
 //metal #993366
 //indie #ffff80
 
+svg.append("circle").attr("cx",100).attr("cy",830).attr("r", 6).style("fill", "rgb(200,50,50)")
+svg.append("circle").attr("cx",100).attr("cy",860).attr("r", 6).style("fill", "rgb(50,200,50)")
+svg.append("circle").attr("cx",100).attr("cy",890).attr("r", 6).style("fill", "rgb(50,50,200)")
+svg.append("text").attr("x", 120).attr("y", 830).text("Energy").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 120).attr("y", 860).text("Danceability").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 120).attr("y", 890).text("BPM").style("font-size", "15px").attr("alignment-baseline","middle")
 
 //defines node
 var node = svg
@@ -348,6 +354,13 @@ var node = svg
                     .attr('font-size', '14px')
                     .attr('fill', 'black')
                     .text('Release Year: ' + year)
+
+                    svg.append("circle").attr("cx",100).attr("cy",830).attr("r", 6).style("fill", "rgb(200,50,50)")
+                    svg.append("circle").attr("cx",100).attr("cy",860).attr("r", 6).style("fill", "rgb(50,200,50)")
+                    svg.append("circle").attr("cx",100).attr("cy",890).attr("r", 6).style("fill", "rgb(50,50,200)")
+                    svg.append("text").attr("x", 120).attr("y", 830).text("Energy").style("font-size", "15px").attr("alignment-baseline","middle")
+                    svg.append("text").attr("x", 120).attr("y", 860).text("Danceability").style("font-size", "15px").attr("alignment-baseline","middle")
+                    svg.append("text").attr("x", 120).attr("y", 890).text("BPM").style("font-size", "15px").attr("alignment-baseline","middle")
             });
         })
     })
@@ -356,6 +369,13 @@ var node = svg
         d3.selectAll("text").remove();
         d3.selectAll("rect").remove();
         console.log('done');
+
+        svg.append("circle").attr("cx",100).attr("cy",830).attr("r", 6).style("fill", "rgb(200,50,50)")
+svg.append("circle").attr("cx",100).attr("cy",860).attr("r", 6).style("fill", "rgb(50,200,50)")
+svg.append("circle").attr("cx",100).attr("cy",890).attr("r", 6).style("fill", "rgb(50,50,200)")
+svg.append("text").attr("x", 120).attr("y", 830).text("Energy").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 120).attr("y", 860).text("Danceability").style("font-size", "15px").attr("alignment-baseline","middle")
+svg.append("text").attr("x", 120).attr("y", 890).text("BPM").style("font-size", "15px").attr("alignment-baseline","middle")
     });
 
 //varies the pull of a link based on magnitude
